@@ -1,21 +1,21 @@
-# def counting(num,inc)
-#   i = 0
-#   numbers = []
-#
-#   while i < num
-#   puts "At the top i is #{i}"
-#   numbers.push(i)
-#
-#   i += inc
-#   puts "Numbers now: ", numbers
-#   puts "At the bottom i is #{i}"
-#   end
-#
-#   puts "The numbers: "
-#   numbers.each {|x| puts x}
-# end
-#
-# counting(12,2)
+def counting(num,inc)
+  i = 0
+  numbers = []
+
+  while i < num
+  puts "At the top i is #{i}"
+  numbers.push(i)
+
+  i += inc
+  puts "Numbers now: ", numbers
+  puts "At the bottom i is #{i}"
+  end
+
+  puts "The numbers: "
+  numbers.each {|x| puts x}
+end
+
+counting(12,2)
 
 
 nums = []
