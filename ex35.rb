@@ -36,12 +36,12 @@ How are you going to move the bear?
 
     if choice.include? "honey"
       dead("The bear looks at you then slaps your face off.")
-    elsif choice.include? "taunt"
+    elsif (choice.include? "taunt") && (!bear_moved)
       puts "the bear has moved from the door. You can go through it now."
       bear_moved = true
-    elsif choice.include? "push"
+    elsif (choice.include? "push") && (bear_moved)
       dead("The bear gets pissed off and chew your leg off.")
-    elsif choice.include? "open" && bear_moved
+    elsif (choice.include? "open") && (bear_moved)
       gold_room
     else
       puts "I got no idea what that means."
